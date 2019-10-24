@@ -215,7 +215,7 @@ haproxy_deploy() {
             -issuer "${_issuer}" \
             -cert "${_pem}" \
             -url "${_ocsp_url}" \
-            -header Host "${_ocsp_host}" \
+            -header Host="${_ocsp_host}" \
             -respout "${_ocsp}" \
             -verify_other "${_issuer}" \
             -no_nonce \
@@ -228,7 +228,7 @@ haproxy_deploy() {
             -issuer "${_issuer}" \
             -cert "${_pem}" \
             -url "${_ocsp_url}" \
-            -header Host "${_ocsp_host}" \
+            -header Host="${_ocsp_host}" \
             -respout "${_ocsp}" \
             -verify_other "${_issuer}" \
             -no_nonce \
